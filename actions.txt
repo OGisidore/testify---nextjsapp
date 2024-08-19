@@ -1,0 +1,8 @@
+next aaction todo
+
+1. Go to the repository of the mentor of tuto get the font . define the font got to the title and get the google font for the dexcription 
+** HOW TO import local font on next js ? We import  LocalFont function from next/font/local this function take an argument {
+    src : "path/to/the/font.woff2"
+}
+import cn to integrate the font in the place that he shall be
+2. After the 1 completed , we are going to set - up a reusable component  starting by dowloading a logo from the repo a\of a mentor     
