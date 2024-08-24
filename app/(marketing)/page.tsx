@@ -1,5 +1,8 @@
+// import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
+import { Neobutton } from "@/components/ui/NeonButton";
 import { cn } from "@/lib/utils";
-import { Medal } from "lucide-react";
+import { Medal, MessagesSquare } from "lucide-react";
 import {  Poppins } from "next/font/google";
 import Link from "next/link";
 const exampleFont = Poppins({
@@ -26,12 +29,14 @@ export default function marketingPage() {
          from high rises to the home office , the way your team works is unique - accomplish it all with  Testify  
       </div>
 {/* Call the component call button from shadcn-ui by type on your terminal the command bellow : npm shadcn-ui@latest add button. After install this component you can call it and you also have capabilitties to change appearance of the these component    */}
-     <button className="mt-6" >
-      {/* size="lg" asChild */}
+     <Neobutton className="" >
       <Link href={"/sign-up"}>
       Get Testify for free 
       </Link>
-     </button>
+     </Neobutton>
+     <Button className="px-8 py-2 rounded-full text-black bg-slate-400"  >
+      <MessagesSquare className="mr-2 h-4 w-4" /> Conversations
+    </Button>
     </div>
   );
 }
