@@ -1,5 +1,6 @@
 
-import {Navbar} from "./_components/navbar"
+import { Headers } from "../_components/Headers";
+import {Hero,} from "../_components/Hero"
 export default function MarketingLayout({
   children,
 }: Readonly<{
@@ -7,10 +8,11 @@ export default function MarketingLayout({
 }>) {
   return (
     
-      <div className='h-full bg-slate-100'>
+      <div className='h-full flex flex-col items-center dark:bg-background'>
         {/* Navbar */}
-        <Navbar/>
-        <main className="pt-40 select-none pb-20 bg-slate-100 "        >
+        <Headers/>
+        <Hero/>
+        <main className="pt-40 select-none pb-20 ">
           {children}
         </main>
         
