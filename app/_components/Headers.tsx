@@ -1,25 +1,27 @@
 /* eslint-disable @next/next/no-img-element */
-import { buttonVariants, Neobutton } from "@/components/ui/NeonButton";
+"use client";
 import { cn } from "@/lib/utils";
-import { Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { GithubIcon } from "./icons/CusturmICon";
+import { CustomIcon, GithubIcon } from "./icons/CusturmICon";
 import { Section } from "./Section";
+import DarkModeSwitcher from "./icons/DarkModeSwitcher";
+import { buttonVariants } from "@/components/ui/button";
 
 export const Headers = () => {
   return (
-    <div className="w-full backdrop-blur-lg sticky top-0 py-4">
+    <div className="w-full backdrop-blur-lg sticky z-50 top-0 py-4">
       <Section className=" flex items-baseline ">
         <h1 className="font-bold  text-lg text-foreground"> isidore.dev</h1>
         <div className="socials flex-1"/>
-          <ul className=" flex ">
+          <ul className=" flex items-center gap-x-5 ">
+            <DarkModeSwitcher/>
             <Link
               href={"/"}
               className={cn(
                 buttonVariants({ variant: "outline" }),
-                " p-1 flex items-center  rounded-full   justify-center"
+                " p-2 flex items-center  rounded-full   justify-center"
               )}
             >
               <GithubIcon size={18} className="text-foreground" />
@@ -28,10 +30,10 @@ export const Headers = () => {
               href={"/"}
               className={cn(
                 buttonVariants({ variant: "outline" }),
-                "social flex items-center p-2 rounded-full   justify-center gradient"
+                "social flex items-center rounded-full p-2  justify-center "
               )}
             >
-              <Twitter color="white" />
+              <CustomIcon size={10} name="LinkedIn" className="" />
             </Link>
           </ul>
       </Section>

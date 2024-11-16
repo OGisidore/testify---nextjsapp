@@ -22,14 +22,12 @@ export const Hero = () => {
             Fullstack developer - Web designer - AI passionnate{" "}
           </h3>
           <p className="description mt-4 text-lg leading-9 font-medium">
-          I&apos;m a fullstack developer passionnate about AI , coding challenges, and 3D integration. Skilled in {' '}
-          <Code className="whitespace-nowrap"><CustomIcon name="React" size={16} className="inline mb-0.5 mr-0.5"/> React</Code>,{' '}
-          <Code className="whitespace-nowrap"><CustomIcon name="TailwindCSS" size={16} className="inline mb-0.5 mr-0.5"/> Tailwind CSS </Code>,{' '}
-          <Code className="whitespace-nowrap"><CustomIcon name="Nextjs" size={16} className="inline mb-0.5 mr-0.5"/> Next.js</Code>,{' '}
-          <Code className="whitespace-nowrap"><CustomIcon name="Nodejs" size={16} className="inline mb-0.5 mr-0.5"/> Node.js</Code>,{' '}
-          <Code className="whitespace-nowrap"><CustomIcon name="Django" size={16} className="inline mb-0.5 mr-0.5"/> Django</Code>,{' '}
-
-          . I turn ideas into reality with <strong>clean</strong>, <strong>efficient,  and Scalable code</strong>. <br /> <br /> Let&apos;s collaborate and bring your vision to life!{" "}
+          I&apos;m a fullstack developer passionnate about AI, coding challenges, and 3D integration. Skilled in {' '}
+          <Code className="whitespace-nowrap mx-1"><CustomIcon name="React" size={16} className="inline mb-0.5 mr-0.5"/> React</Code>,{' '}
+          <Code className="whitespace-nowrap mx-1"><CustomIcon name="TailwindCSS" size={16} className="inline mb-0.5 mr-0.5"/> Tailwind CSS </Code>,{' '}
+          <Code className="whitespace-nowrap mx-1"><CustomIcon name="Nextjs" size={16} className="inline mb-0.5 mr-0.5"/> Next.js</Code>,{' '}
+          <Code className="whitespace-nowrap mx-1"><CustomIcon name="Nodejs" size={16} className="inline mb-0.5 mr-0.5"/> Node.js</Code>,{' '}
+          <Code className="whitespace-nowrap mx-1"><CustomIcon name="Django" size={16} className="inline mb-0.5 mr-0.5"/> Django </Code> {" "}... I turn ideas into reality with <strong>clean</strong>, <strong>efficient,  and Scalable code</strong>. <br /> <br /> Let&apos;s collaborate and bring your vision to life!{" "}
           </p>
         </div>
         <div className="photo  flex items-end  justify-center md:justify-end h-full md:self-end flex-1">

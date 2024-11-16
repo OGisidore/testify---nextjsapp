@@ -11,8 +11,8 @@ const inter = Inter({
   });
 
 export const metadata: Metadata = {
-  title: "Testify",
-  description: "AI-recommandation SAAS",
+  title: "Isidore OGOULODO",
+  description: "developer portfolio, fullstack developer, web designer, AI passionnate",
 };
 
 export default function RootLayout({
@@ -21,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body className={cn("h-full w-full bg-background text-foreground font-sans px-5 ",)}>{children}</body>
+    <html lang="en" className="">
+      <body className={cn("h-full w-full bg-background text-foreground font-sans  ",)}>{children}</body>
     </html>
   );
 }
