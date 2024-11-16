@@ -159,7 +159,7 @@ body,
     background-position: center;
     z-index: -1;
     pointer-events: none;
-    animation: ZoomIn 2s ease-in-out 1 forwards;
+    animation: ZoomIn 1.5s ease-in-out 1 forwards;
   }
   &::after{
     content: "";
@@ -168,7 +168,7 @@ body,
     background-size: cover;
     background-position: center;
     transform: scale(2);
-    animation: ZoomInOut 2s ease-in-out 1 forwards;
+    animation: ZoomInOut 1.5s ease-in-out 1 forwards;
     z-index: -1;
     pointer-events: none;
   }
@@ -177,7 +177,7 @@ body,
     stroke-width: 0.5;
     stroke-dasharray: 150;
     stroke-dashoffset: 150;
-    animation: textAnimation 2s ease-in-out 1 forwards;
+    animation: textAnimation 1.5s ease-in-out 1 forwards;
     @apply stroke-current ;
   }
 }
