@@ -115,7 +115,7 @@ export const Technos = () => {
     ]
     return (
         <div className="w-full  md:flex mt-24   border-border gap-2">
-            <div className="skills flex-[2] p-2 border border-border ">
+            <div className="skills flex-[2] p-2 rounded-lg border border-border ">
 
                 <h2 className="text-2xl font-bold "> My Skills </h2>
                 <div className="skills-content md:flex mt-9 justify-between">

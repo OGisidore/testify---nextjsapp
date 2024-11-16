@@ -147,3 +147,70 @@ body,
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-primary-foreground;
 }
+
+.loader{
+  @apply  relative  overflow-hidden;
+
+  &::before{
+    content: "";
+    @apply absolute inset-0  ;
+    background-image: url('/premium_photo-1673697239981-389164b7b87f.avif');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    pointer-events: none;
+    animation: ZoomIn 2s ease-in-out 1 forwards;
+  }
+  &::after{
+    content: "";
+    @apply absolute inset-0  ;
+    background-image: url('/after.png');
+    background-size: cover;
+    background-position: center;
+    transform: scale(2);
+    animation: ZoomInOut 2s ease-in-out 1 forwards;
+    z-index: -1;
+    pointer-events: none;
+  }
+  svg path{
+    fill: transparent;
+    stroke-width: 0.5;
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
+    animation: textAnimation 2s ease-in-out 1 forwards;
+    @apply stroke-current ;
+  }
+}
+
+@keyframes textAnimation {
+  0% {
+    stroke-dashoffset: 150;
+  }
+  80%{
+    @apply fill-transparent ;
+  }
+  100% {
+   @apply fill-border;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes ZoomIn {
+  0% {
+    transform: scale(1.2);
+
+  }
+  100% {
+    
+    transform: scale(1);
+  }
+}
+
+@keyframes ZoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
