@@ -21,7 +21,7 @@ export const Hero = () => {
             {" "}
             Fullstack developer - Web designer - AI passionnate{" "}
           </h3>
-          <p className="description mt-4 text-xl leading-9 font-medium">
+          <p className="description text-justify mt-4 text-xl leading-9 font-medium">
           I&apos;m a fullstack developer passionnate about AI, coding challenges, and 3D integration. Skilled in {' '}
           <Code className="whitespace-nowrap mx-1"><CustomIcon name="React" size={16} className="inline mb-0.5 mr-0.5"/> React</Code>,{' '}
           <Code className="whitespace-nowrap mx-1"><CustomIcon name="TailwindCSS" size={16} className="inline mb-0.5 mr-0.5"/> Tailwind CSS </Code>,{' '}
