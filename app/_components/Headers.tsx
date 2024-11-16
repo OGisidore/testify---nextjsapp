@@ -5,16 +5,16 @@ import { Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { GithubIcon } from "./icons/GithubIcon";
+import { GithubIcon } from "./icons/CusturmICon";
 import { Section } from "./Section";
 
 export const Headers = () => {
   return (
-    <div className="w-full sticky top-0 py-4">
+    <div className="w-full backdrop-blur-lg sticky top-0 py-4">
       <Section className=" flex items-baseline ">
         <h1 className="font-bold  text-lg text-foreground"> isidore.dev</h1>
         <div className="socials flex-1"/>
-          <ul className=" ">
+          <ul className=" flex ">
             <Link
               href={"/"}
               className={cn(
@@ -38,3 +38,4 @@ export const Headers = () => {
     </div>
   );
 };
+

@@ -10,7 +10,7 @@ export default function MarketingLayout({
     
       <div className='h-full flex flex-col items-center dark:bg-background'>
         {/* Navbar */}
-        <Headers/>
+        {/* <Headers/> */}
         <Hero/>
         <main className="pt-40 select-none pb-20 ">
           {children}

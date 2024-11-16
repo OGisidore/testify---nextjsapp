@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={cn("h-full w-full bg-background text-foreground font-sans ",)}>{children}</body>
+      <body className={cn("h-full w-full bg-background text-foreground font-sans px-5 ",)}>{children}</body>
     </html>
   );
 }
