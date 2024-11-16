@@ -11,7 +11,7 @@ const Certification: React.FC = () => {
         <section className="py-12 bg--100">
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl font-bold text-start mb-8">Certifications</h2>
-                <p className="text-accent-foreground bg-accent font-medium p-2 mb-6">
+                <p className="text-accent-foreground bg-accent font-medium text-lg p-2 mb-6">
                     Here are some of the certifications I have earned  this year.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

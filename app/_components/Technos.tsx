@@ -123,7 +123,7 @@ export const Technos = () => {
                         category.title === "Skilled Technos" ? (
                             <div key={index} className="mb-5 space-y-8">
                                 <h3 className="text-xl font-semibold mb-3"> I already work with</h3>
-                                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 lg:grid-rows-4 gap-x-10 gap-2">
+                                <div className="grid grid-cols-2 text-lg md:grid-cols-2 lg:grid-cols-2 lg:grid-rows-4 gap-x-10 gap-2">
                                     {category.technologies.map((tech: any, techIndex: any) => (
                                         <div key={techIndex} className="flex  gap-2 items-center">
                                             <div className="w-5 h-5 mb-2">
@@ -137,7 +137,7 @@ export const Technos = () => {
                         ) : (
                             <div key={index} className="mb-5 space-y-8 ">
                                 <h3 className="text-xl font-semibold text-nowrap mb-3">I&apos;m Learning</h3>
-                                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-1 gap-2">
+                                <div className="grid grid-cols-2 text-lg md:grid-cols-2 lg:grid-cols-1 gap-2">
                                     {category.technologies.map((tech: any, techIndex: any) => (
                                         <div key={techIndex} className="flex  gap-2 items-center">
                                             <div className="w-5 h-5 mb-2">
@@ -164,8 +164,8 @@ export const Technos = () => {
                                     <Image src={work.logo} alt={work.company} className="" width={40} height={40} />
                                 </div>
                                 <div className="flex-1">
-                                    <h3 className="text-lg text-nowrap font-semibold">{work.company}</h3>
-                                    <p className="text-sm font-semibold text-primary-foreground">{work.position}</p>
+                                    <h3 className="text-xl text-nowrap font-semibold">{work.company}</h3>
+                                    <p className="text-lg font-semibold text-primary-foreground">{work.position}</p>
                                     <p className="text-sm text-muted-foreground">{work.date}</p>
                                     {work.chalenge && (
                                         <span className="inline-block absolute top-5 -right-5 rotate-45 bg-red-500 text-white text-xs px-2 py-1 rounded-full">

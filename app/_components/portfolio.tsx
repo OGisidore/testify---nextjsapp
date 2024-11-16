@@ -32,7 +32,7 @@ const Portfolio: React.FC = () => {
     return (
         <div className="container mx-auto p-4">
             <h1 className="text-3xl font-bold mb-6">My Projects</h1>
-            <p className="text-accent-foreground bg-accent font-medium p-2  mb-6">
+            <p className="text-accent-foreground bg-accent font-medium p-2 text-lg  mb-6">
                 Here are some of the projects I have worked on for fun and learning.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
