@@ -1,4 +1,3 @@
-"use client";
 
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -14,51 +13,43 @@ const inter = Inter({
   variable: "--font-sans",
 });
 
+export const metadata = {
+  title: "Isidore OGOULODO | FullStack Developer",
+  description: "Explore the portfolio of Isidore OGOULODO, a skilled web developer showcasing a range of projects, technical skills, and professional experiences.",
+  keywords: ["portfolio", "developer", "projects", "Isidore OGOULODO", "FullStack Developer"],
+  author: "Isidore OGOULODO",
+  viewport: "width=device-width, initial-scale=1.0",
+  openGraph: {
+    title: "Isidore OGOULODO | FullStack Developer",
+    description: "Explore the portfolio of Isidore OGOULODO, a skilled web developer showcasing a range of projects, technical skills, and professional experiences.",
+    image: "/isidore-port.png",
+    url: "https://isidore-og.netlify.app/",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Isidore OGOULODO | FullStack Developer",
+    description: "Explore the portfolio of Isidore OGOULODO, a skilled web developer showcasing a range of projects, technical skills, and professional experiences.",
+    image: "/isidore-port.png",
+  },
+};
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1500);
-
-    return () => clearTimeout(timer); // Cleanup
-  }, []);
+ 
 
   return (
     <html lang="en" className={inter.variable}>
-      <Head>
-        {/* SEO général */}
-        <title>Isidore OGOULODO | FullStack  developer</title>
-        <meta name="description" content="Explore the portfolio of Isidore OGOULODO, a skilled web developer showcasing a range of projects, technical skills, and professional experiences.
- " />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        {/* Open Graph (pour Facebook, WhatsApp, etc.) */}
-        <meta property="og:title" content="Isidore OGOULODO | FullStack  developer" />
-        <meta property="og:description" content="Explore the portfolio of Isidore OGOULODO, a skilled web developer showcasing a range of projects, technical skills, and professional experiences.
- " />
-        <meta property="og:image" content="/isidore-port.png" />
-        <meta property="og:url" content="https://isidore-og.netlify.app/" />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Isidore OGOULODO| FullStack  developer" />
-        <meta name="twitter:description" content="Explore the portfolio of Isidore OGOULODO, a skilled web developer showcasing a range of projects, technical skills, and professional experiences.
- ." />
-        <meta name="twitter:image" content="/isidore-port.png" />
-      </Head>
+     
       <body
         className={cn(
           "h-full w-full bg-background text-foreground font-sans"
         )}
       >
-        {loading ? <Loader /> : children}
+         {children}
       </body>
     </html>
   );
