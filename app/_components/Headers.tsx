@@ -13,7 +13,7 @@ export const Headers = () => {
   return (
     <div className="w-full backdrop-blur-lg sticky z-50 top-0 py-4">
       <Section className=" flex items-baseline ">
-        <h1 className="font-bold  text-lg text-foreground"> isidore.dev</h1>
+        <h1 className="font-bold  text-lg text-foreground"> isidore-og</h1>
         <div className="socials flex-1"/>
           <ul className=" flex items-center gap-x-5 ">
             <DarkModeSwitcher/>
