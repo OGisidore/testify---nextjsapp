@@ -18,7 +18,7 @@ export const Headers = () => {
           <ul className=" flex items-center gap-x-5 ">
             <DarkModeSwitcher/>
             <Link
-              href={"/"}
+              href={"https://github.com/OGisidore"}
               className={cn(
                 buttonVariants({ variant: "outline" }),
                 " p-2 flex items-center  rounded-full   justify-center"
@@ -27,7 +27,7 @@ export const Headers = () => {
               <GithubIcon size={18} className="text-foreground" />
             </Link>
             <Link
-              href={"/"}
+              href={"https://www.linkedin.com/in/isidore-ogoulodo-677667209/"}
               className={cn(
                 buttonVariants({ variant: "outline" }),
                 "social flex items-center rounded-full p-2  justify-center "
