@@ -12,16 +12,13 @@ import { Technos } from "./_components/Technos";
 import Portfolio from "./_components/portfolio";
 import Certification from "./_components/Certification";
 import Footer from "./_components/Footer";
-import dynamic from "next/dynamic";
 const exampleFont = Poppins({
   subsets : ["latin"],              
   weight: ["100", "200"]
 })
-const Scene = dynamic(() => import('./_components/threeD/3d'), {ssr: false})
 export default function marketingPage() {
   return (
-    <main className="h-full">
-          {/* <Scene/> */}
+    <main>
          <Headers/>
          <Section className="mt-10">
          <Hero/>
@@ -30,8 +27,6 @@ export default function marketingPage() {
          <Certification/>
 
          </Section>
-     
-
          <Footer/>
           {/* <footer className="bg-gray-800 text-white py-4">
               <div className="container mx-auto text-center">
