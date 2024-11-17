@@ -14,7 +14,7 @@ const exampleFont = Poppins({
   weight: ["100", "200"]
 })
 
-export default function marketingPage() {
+export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

@@ -2,9 +2,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import { useEffect, useState } from "react";
-import Loader from "./_components/Loader";
-import Head from "next/head";
 
 // Font configuration
 const inter = Inter({
@@ -18,7 +15,6 @@ export const metadata = {
   description: "Explore the portfolio of Isidore OGOULODO, a skilled web developer showcasing a range of projects, technical skills, and professional experiences.",
   keywords: ["portfolio", "developer", "projects", "Isidore OGOULODO", "FullStack Developer"],
   author: "Isidore OGOULODO",
-  viewport: "width=device-width, initial-scale=1.0",
   openGraph: {
     title: "Isidore OGOULODO | FullStack Developer",
     description: "Explore the portfolio of Isidore OGOULODO, a skilled web developer showcasing a range of projects, technical skills, and professional experiences.",
@@ -33,6 +29,7 @@ export const metadata = {
     image: "/isidore-port.png",
   },
 };
+
 
 export default function RootLayout({
   children,
