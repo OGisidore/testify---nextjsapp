@@ -18,7 +18,7 @@ export const metadata = {
   openGraph: {
     title: "Isidore OGOULODO | FullStack Developer",
     description: "Explore the portfolio of Isidore OGOULODO, a skilled web developer showcasing a range of projects, technical skills, and professional experiences.",
-    image: "/isidore-port.png",
+    image: "https://isidore-og.netlify.app/isidore-port.png",
     url: "https://isidore-og.netlify.app/",
     type: "website",
   },
@@ -26,7 +26,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Isidore OGOULODO | FullStack Developer",
     description: "Explore the portfolio of Isidore OGOULODO, a skilled web developer showcasing a range of projects, technical skills, and professional experiences.",
-    image: "/isidore-port.png",
+    image: "https://isidore-og.netlify.app/isidore-port.png",
   },
 };
 
