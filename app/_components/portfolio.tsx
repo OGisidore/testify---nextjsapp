@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -38,7 +39,7 @@ const Portfolio: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {projects.map((project, index) => (
                     <Link href={project.link} key={index} className="bg-accent/25 shadow-md hover:bg-accent border  hover:transition-[1s] rounded-lg p-2">
-                        <img src={project.cover} alt={project.title} className="mb-4 w-full" />
+                        <Image src={project.cover} width={500} height={500} alt={project.title} className="mb-4 w-full" />
                         <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
                         {/* <p className="text-gray-700 mb-4">{project.description}</p> */}
                         {/* <a href={project.link} className="text-blue-500 hover:underline">

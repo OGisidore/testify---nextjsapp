@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -17,7 +18,7 @@ const Certification: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {certifications.map(cert => (
                         <Link href={cert.Link} key={cert.id} className="shadow-muted-foreground border p- rounded-lg shadow-md">
-                            <img src={cert.image} alt="Certification" className="w-full" />
+                            <Image width={500} height={500} src={cert.image} alt="Certification" className="w-full" />
                             
                         </Link>
                     ))}

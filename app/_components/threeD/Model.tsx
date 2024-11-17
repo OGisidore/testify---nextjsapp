@@ -12,7 +12,7 @@ export default function Model() {
         if (actions && actions['Take 001']) {
             actions['Take 001'].play().paused = false
         }
-    }, [])
+    }, [actions])
 useFrame(() => {
     if (actions && actions['Take 001']) {
         actions['Take 001'].time = (actions['Take 001'].getClip().duration * scroll.offset) / 1
